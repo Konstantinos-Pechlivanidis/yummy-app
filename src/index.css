@@ -1,0 +1,14 @@
+button {
+  font-family: "Sora", sans-serif;
+}
+
+span {
+  font-family: "Sora", sans-serif;
+}
+
+
+@media (max-width: 768px) {
+  .spacer {
+    height: 5em;
+  }
+}

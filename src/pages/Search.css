@@ -1,0 +1,14 @@
+.footer-page-section {
+  height: auto;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+  .footer-page-section {
+    height: auto;
+    padding: 1em;
+    margin-top: 1em;
+  }
+}

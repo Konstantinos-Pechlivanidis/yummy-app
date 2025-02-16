@@ -1,0 +1,102 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Sora", sans-serif;
+}
+
+/* navbar-column Container */
+.navbar-column {
+  position: fixed;
+  z-index: 10;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  font-family: "Sora", sans-serif;
+  top: 5%;
+}
+
+/* Visibility Classes */
+.navbar-column.hidden {
+  transform: translateY(100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.navbar-column.visible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* navbar-column Content */
+.navbar-column ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  margin: 0;
+  list-style: none;
+  font-family: "Sora", sans-serif;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari Support */
+}
+
+.navbar-column li {
+  padding: 0.6em 1.2em;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  width: 20em;
+  font-family: "Sora", sans-serif;
+}
+
+/* Hover Effects */
+.navbar-column li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-column a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.navbar-column a span {
+  margin-left: 0.4em;
+  font-weight: 500;
+}
+
+.navbar-column li.active a span {
+  color: #fff;
+}
+
+/* Wide Screen Styles */
+.navbar-column.wide {
+  top: 5%;
+  border-radius: 32px;
+  backdrop-filter: none;
+  font-family: "Sora", sans-serif;
+}
+
+.navbar-column.wide.scrolled {
+  top: auto;
+  bottom: 2em;
+  width: max-content;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+}
+
+/* Show icons on mobile */
+@media screen and (max-width: 1024px) {
+  .navbar-column.wide svg {
+    display: inline-block;
+  }
+
+  .navbar-column.wide .navbar-column-group li span {
+    display: none;
+  }
+}

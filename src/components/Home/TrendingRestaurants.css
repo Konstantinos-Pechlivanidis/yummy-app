@@ -1,0 +1,110 @@
+/* Section Wrapper */
+.trending-section {
+  text-align: center;
+  background-color: #f9f9f9;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Header */
+.trending-header {
+  font-family: 'Sora', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+.slick-track {
+  display: flex;
+}
+
+/* Carousel */
+.trending-carousel .slick-slide {
+  padding: 0 1em; /* Adds spacing between items */
+}
+
+/* Individual Card */
+.carousel-card {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.carousel-card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.card-text{
+  max-width:70%;
+}
+/* Overlay */
+.card-overlay {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  right: 1em;
+  background: rgba(0, 0, 0, 0.7); /* Dark transparent section */
+  color: white;
+  text-align: left;
+  padding: 1em;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Card Text */
+.card-overlay h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  margin-bottom: 0.3em;
+}
+
+.card-overlay p {
+  font-family: 'Sora', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.8em;
+  line-height: 1.4;
+}
+
+/* Reviews */
+.reviews {
+  font-family: 'Sora', sans-serif;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.reviews i {
+  color: #f1c40f; /* Star color */
+  margin-right: 0.3em;
+}
+
+/* Button */
+.details-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-size: 1.4rem;
+  border: 2px solid #fbfcfc;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 1em;
+  transition: all 0.3s ease;
+}
+
+.details-button:hover {
+  background-color: #c0392b;
+}

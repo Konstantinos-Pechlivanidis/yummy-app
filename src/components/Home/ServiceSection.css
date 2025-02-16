@@ -1,0 +1,101 @@
+/* Service Section */
+.service-section {
+  text-align: center;
+  background-color: #f5f5f5;
+  margin: 0 auto;
+}
+
+/* Header */
+.service-header h2 {
+  font-family: 'Sora', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.service-header p {
+  font-family: 'Sora', sans-serif;
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 3em;
+}
+
+/* Individual Card */
+.service-card {
+  position: relative;
+  width: 30%;
+  margin: 1em 0;
+  background-size:cover;
+  background-position:bottom;
+  background-blend-mode: overlay;
+  height: 500px;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* .service-card:nth-child(2) {
+  transform: scale(1.15);
+} */
+
+/* Card Content */
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0); /* Glass effect */
+  backdrop-filter: blur(10px); /* Creates the glass blur effect */
+  border-top: 2px solid #fbfcfc; /* Border for the section */
+  padding: 1.5em;
+  color: white;
+  text-align: center;
+  z-index: 2;
+  border-radius: 0 0 16px 16px;
+}
+
+.card-content h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.card-content p {
+  font-family: 'Sora', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Button Styles */
+.service-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.service-button:hover {
+  background-color: #c0392b;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .service-card {
+    width: 100%;
+  }
+}

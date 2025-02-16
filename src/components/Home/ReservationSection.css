@@ -1,0 +1,143 @@
+/* Reservation Section Styles */
+.reservation {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+  backdrop-filter: blur(12px); /* Blur effect */
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* Reservation Content */
+.reservation-content {
+  position: relative;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+  backdrop-filter: blur(8px); /* Blur effect */
+  border-radius: 16px;
+  padding: 2em;
+  color: white;
+  width: 80%;
+  max-width: 800px;
+  margin-bottom: 2em;
+}
+
+.reservation-title {
+  font-family: "Sora", sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.reservation-subtitle {
+  font-family: "Sora", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 2em;
+}
+
+/* Input Container */
+.reservation-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+/* Input Group */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1); /* Light glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 0.5em;
+  width: 100%;
+  max-width: 300px;
+}
+
+.input-icon {
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 0.5em;
+}
+
+.reservation-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  font-family: "Sora", sans-serif;
+}
+
+.reservation-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+/* Button */
+.reservation-button {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent button */
+  border: 2px solid #111111;
+  border-radius: 24px;
+  padding: 12px 24px;
+  font-family: "Sora", sans-serif;
+  font-size: 1.2rem;
+  color: #111111;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.reservation-button:hover {
+  background-color: #c0392b;
+  color: white;
+}
+
+/* Style the text color of the input */
+.reservation-input {
+  color: white;
+}
+
+/* Hide the native icon for date/time inputs (if needed) */
+.reservation-input::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+  cursor: pointer;
+}
+
+/* For Firefox */
+.reservation-input::-moz-focus-inner {
+  color: white;
+}
+
+/* For other browsers as a fallback */
+.reservation-input::-ms-clear {
+  color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .reservation {
+    margin: 1em 0;
+    padding: 0;
+  }
+
+  .reservation-content {
+    border-radius: 34px;
+  }
+
+  .reservation-title {
+    font-size: 2rem;
+  }
+
+  .reservation-inputs {
+    flex-direction: column;
+    gap: 1em;
+  }
+}

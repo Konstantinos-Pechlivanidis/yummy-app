@@ -1,0 +1,275 @@
+.map-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.restaurant-details-list {
+  padding: 2rem;
+  overflow-y: auto;
+  background-color: #fdfdfd;
+  border-radius: 2em;
+}
+
+.restaurant-details-list h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.restaurant-details-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.restaurant-details-card {
+  width: 100%;
+  max-width: 20%;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  overflow: hidden; /* Ensure content stays within card */
+}
+
+.restaurant-details-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.restaurant-details-image {
+  width: 100%; /* Full width */
+  height: 150px; /* Adjust height as needed */
+  object-fit: cover; /* Keep image aspect ratio and fill area */
+  background-position: center;
+  border-top-left-radius: 8px; /* Match card radius */
+  border-top-right-radius: 8px;
+}
+
+.restaurant-details-info {
+  padding: 1rem 0.5rem; /* Add padding to content */
+  text-align: center; /* Center-align text */
+}
+
+.restaurant-details-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.restaurant-details-info p {
+  margin: 0.3rem 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.pagination button {
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #a12a21;
+}
+
+.pagination button:disabled {
+  background-color: #d0d0d0;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 40%;
+  height: 100%;
+  align-self: center;
+}
+
+.styled-map {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.custom-popup {
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popup-info {
+  font-family: 'Sora', sans-serif;
+  text-align: center;
+}
+
+.popup-info h3 {
+  font-family: 'Sora', sans-serif;
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.popup-info p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.3rem 0;
+}
+
+/* Button */
+.details-button {
+  background: rgba(0, 0, 0, 0.7);;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-size: 1.4rem;
+  border: 2px solid #fbfcfc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.details-button:hover {
+  background-color: #c0392b;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .map-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .restaurant-details-list{
+    width: fit-content;
+    height: auto;
+    max-width: fit-content;
+    padding: 2em;
+    margin-bottom: 1em;
+  }
+  .map-container {
+    width: 100%;
+    height: auto;
+    max-width: none;
+    padding: 0;
+  }
+
+  .restaurant-details-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .restaurant-details-card {
+    width: 100%;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    overflow: hidden; /* Ensure content stays within card */
+  }
+
+  .styled-map {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .restaurant-details-list{
+    width: fit-content;
+    height: auto;
+    max-width: fit-content;
+    padding: 0;
+    margin-bottom: 1em;
+  }
+  .map-container {
+    width: 100%;
+    height: auto;
+    max-width: none;
+    padding: 0;
+  }
+  .restaurant-details-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .map-section {
+    padding: 0;
+  }
+  .restaurant-details-card {
+    padding: 0.5rem; /* Reduce padding for smaller screens */
+  }
+
+  .restaurant-details-image {
+    height: 120px; /* Adjust height for smaller screens */
+  }
+
+  .restaurant-details-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .restaurant-details-info p {
+    font-size: 0.8rem;
+  }
+
+  .pagination button {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+    margin: 2em;
+  }
+
+  .styled-map {
+    width: 100%;
+    height: 600px;
+  }
+}

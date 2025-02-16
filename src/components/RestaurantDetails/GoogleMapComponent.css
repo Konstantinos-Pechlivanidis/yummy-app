@@ -1,0 +1,163 @@
+/* ================= GOOGLE MAP CONTAINER ================= */
+.google-map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 900px;
+  width: 100%;
+  margin: 2rem auto;
+  font-family: "Sora", sans-serif;
+  text-align: center;
+}
+
+/* ================= MAP TITLE ================= */
+.map-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+  font-family: "Sora", sans-serif;
+}
+
+/* ================= GOOGLE MAP IMAGE ================= */
+.map-image {
+  border-radius: 12px;
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.map-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= OPEN MAPS BUTTON ================= */
+.open-maps-button {
+  background-color: #17202a;
+  color: white;
+  padding: 0.85rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-family: "Sora", sans-serif;
+}
+
+.open-maps-button:hover {
+  background-color: #0b1a2e;
+}
+
+/* ================= RESPONSIVENESS ================= */
+
+/* 📌 1️⃣ Large Screens (4K, 2K, Desktops) */
+@media (min-width: 1800px) {
+  .google-map-container {
+    max-width: 1100px;
+  }
+
+  .map-title {
+    font-size: 2.5rem;
+  }
+
+  .map-image {
+    width: 800px;
+  }
+
+  .open-maps-button {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+}
+
+/* 📌 2️⃣ Laptops & Standard Desktops */
+@media (max-width: 1440px) {
+  .google-map-container {
+    max-width: 800px;
+    padding: 1.5rem;
+  }
+
+  .map-title {
+    font-size: 2rem;
+  }
+
+  .map-image {
+    width: 550px;
+  }
+}
+
+/* 📌 3️⃣ Tablets (Medium Screens) */
+@media (max-width: 1024px) {
+  .google-map-container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .map-title {
+    font-size: 1.8rem;
+  }
+
+  .map-image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .open-maps-button {
+    font-size: 1rem;
+    padding: 0.75rem 1.2rem;
+  }
+}
+
+/* 📌 4️⃣ Mobile Devices */
+@media (max-width: 768px) {
+  .google-map-container {
+    padding: 1.2rem;
+    width: 95%;
+  }
+
+  .map-title {
+    font-size: 1.6rem;
+  }
+
+  .map-image {
+    height: 250px;
+  }
+
+  .open-maps-button {
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
+  }
+}
+
+/* 📌 5️⃣ Small Phones */
+@media (max-width: 480px) {
+  .google-map-container {
+    width: 95%;
+    padding: 0;
+  }
+
+  .map-title {
+    font-size: 1.4rem;
+  }
+
+  .map-image {
+    height: 220px;
+  }
+
+  .open-maps-button {
+    font-size: 0.85rem;
+    padding: 0.6rem 0.9rem;
+  }
+}

@@ -1,0 +1,286 @@
+/* Profile Form Section */
+.profile-form-container {
+  width: 90%;
+  padding: 2rem;
+  color: #fff;
+  border-radius: 16px;
+  font-family: "Sora", sans-serif;
+}
+
+.profile-form-container h2 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  color: #17202a;
+  font-family: "Sora", sans-serif;
+  font-size: 3em;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  font-family: "Sora", sans-serif;
+}
+
+.profile-form-group {
+  display: flex;
+  flex-direction: column;
+  font-family: "Sora", sans-serif;
+}
+
+.profile-form-group label {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #17202a;
+  margin-bottom: 0.5rem;
+  font-family: "Sora", sans-serif;
+}
+
+.profile-form-group p,
+.profile-form-group input {
+  font-size: 1.2em;
+  padding: 0.8rem;
+  border: 3px solid #7f8c8d;
+  border-radius: 8px;
+  color: #17202a;
+  font-family: "Sora", sans-serif;
+}
+
+.profile-form-group p {
+  font-family: "Sora", sans-serif;
+}
+
+.profile-form-group input:focus {
+  outline: none;
+  border-color: #7b241c;
+}
+
+/* Buttons */
+.profile-form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  font-family: "Sora", sans-serif;
+  padding: 0.8rem;
+}
+
+.profile-edit-button,
+.profile-save-button,
+.profile-cancel-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: "Sora", sans-serif;
+  margin: 0;
+}
+
+.profile-edit-button {
+  background-color: #17202a;
+  color: white;
+}
+
+.profile-edit-button:hover {
+  background-color: #17202a;
+}
+
+.profile-save-button {
+  background-color: #1e8449;
+  color: white;
+}
+
+.profile-save-button:hover {
+  background-color: #145a32;
+}
+
+.profile-cancel-button {
+  background-color: #a93226;
+  color: white;
+}
+
+.profile-cancel-button:hover {
+  background-color: #7b241c;
+}
+
+
+@media (max-width: 1600px) {
+  /* Profile Form Section */
+.profile-form-container {
+  width: 90%;
+  padding: 2rem;
+  color: #fff;
+  border-radius: 16px;
+  font-family: "Sora", sans-serif;
+}
+
+.profile-form-container h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #17202a;
+  font-family: "Sora", sans-serif;
+  font-size: 2em;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  font-family: "Sora", sans-serif;
+}
+
+.profile-form-group {
+  display: flex;
+  flex-direction: column;
+  font-family: "Sora", sans-serif;
+  padding: 0.2rem;
+}
+
+.profile-form-group label {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #17202a;
+  margin-bottom: 0.2rem;
+  font-family: "Sora", sans-serif;
+}
+
+.profile-form-group p,
+.profile-form-group input {
+  font-size: 1.2em;
+  padding: 0.8rem;
+  border: 3px solid #7f8c8d;
+  border-radius: 8px;
+  color: #17202a;
+  font-family: "Sora", sans-serif;
+}
+
+.profile-form-group p {
+  font-family: "Sora", sans-serif;
+}
+
+.profile-form-group input:focus {
+  outline: none;
+  border-color: #7b241c;
+}
+
+/* Buttons */
+.profile-form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  font-family: "Sora", sans-serif;
+  padding: 0.8rem;
+}
+
+.profile-edit-button,
+.profile-save-button,
+.profile-cancel-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: "Sora", sans-serif;
+  margin: 0;
+}
+
+.profile-edit-button {
+  background-color: #17202a;
+  color: white;
+}
+
+.profile-edit-button:hover {
+  background-color: #17202a;
+}
+
+.profile-save-button {
+  background-color: #1e8449;
+  color: white;
+}
+
+.profile-save-button:hover {
+  background-color: #145a32;
+}
+
+.profile-cancel-button {
+  background-color: #a93226;
+  color: white;
+}
+
+.profile-cancel-button:hover {
+  background-color: #7b241c;
+}
+}
+
+@media (max-width: 1024px) {
+  .profile-form-container {
+    height: 100%;
+    width: auto;
+    padding: 2rem;
+  }
+  .profile-form-group {
+    display: flex;
+    flex-direction: column;
+    font-family: "Sora", sans-serif;
+    padding: 0.5rem;
+  }
+  .profile-form-container h2 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    color: #17202a;
+    font-family: "Sora", sans-serif;
+    font-size: 2em;
+  }
+  .profile-form-group label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #17202a;
+    margin-bottom: 0.5rem;
+    font-family: "Sora", sans-serif;
+  }
+  
+  .profile-form-group p,
+  .profile-form-group input {
+    font-size: 1.1em;
+    padding: 0.8rem;
+    border: 3px solid #7f8c8d;
+    border-radius: 8px;
+    color: #17202a;
+    font-family: "Sora", sans-serif;
+    margin: 0;
+  }
+}
+
+
+@media (max-width: 763px) {
+  .profile-form-container {
+    height: 100%;
+    width: auto;
+    padding: 2rem;
+  }
+  .profile-form-container h2 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    color: #17202a;
+    font-family: "Sora", sans-serif;
+    font-size: 2em;
+  }
+  .profile-form-group label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #17202a;
+    margin-bottom: 0.5rem;
+    font-family: "Sora", sans-serif;
+  }
+  
+  .profile-form-group p,
+  .profile-form-group input {
+    font-size: 1.1em;
+    padding: 0.8rem;
+    border: 3px solid #7f8c8d;
+    border-radius: 8px;
+    color: #17202a;
+    font-family: "Sora", sans-serif;
+    margin: 0;
+  }
+}
