@@ -15,7 +15,7 @@ const GoogleMapComponent = ({ name, location }) => {
           location
         )}&zoom=15&size=600x300&maptype=roadmap
         &markers=color:red%7Clabel:R%7C${encodeURIComponent(location)}
-        &key=AIzaSyA6bzHHOcx_GR9cXFSFSB_GAKNGsyaF0Ec`}
+        &key=`}
         alt="Restaurant Location"
         className="map-image"
         onClick={() => window.open(googleMapsLink, "_blank")}
