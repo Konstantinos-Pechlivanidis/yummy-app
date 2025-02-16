@@ -4,6 +4,7 @@ import "./GoogleMapComponent.css";
 const GoogleMapComponent = ({ name, location }) => {
   // Construct a Google Maps search URL
   const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(name + " " + location)}`;
+  const googleApiKey = process.env.REACT_APP_GOOGLE_API_KEY;
 
   return (
     <div className="google-map-container">
@@ -15,7 +16,7 @@ const GoogleMapComponent = ({ name, location }) => {
           location
         )}&zoom=15&size=600x300&maptype=roadmap
         &markers=color:red%7Clabel:R%7C${encodeURIComponent(location)}
-        &key=`}
+        &key=${googleApiKey}`}
         alt="Restaurant Location"
         className="map-image"
         onClick={() => window.open(googleMapsLink, "_blank")}
